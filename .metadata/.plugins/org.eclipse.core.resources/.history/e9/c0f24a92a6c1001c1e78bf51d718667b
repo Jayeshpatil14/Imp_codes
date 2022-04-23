@@ -1,0 +1,32 @@
+package util;
+
+import java.util.Scanner;
+/*
+ Strong number : Are numbers whose sum of factorial of digits 
+ 				 is equal to the original number. 
+ */
+public class StrongNumber {
+
+	static Scanner sc = new Scanner(System.in);
+	public static int factorial(num) {
+		int fact = 1;
+		for (int i = 1; i <= num; i++) {
+			fact = fact * i;
+		}
+		return fact;
+	}
+	public static void main(String[] args) {
+		
+		System.out.print("Enter number : ");
+		int num = sc.nextInt();
+		
+		
+		
+		
+		if(fact==num)
+			System.out.println(num+" is Strong number");
+		else
+			System.out.println(num+" is not a strong number");
+	}
+
+}

@@ -1,0 +1,15 @@
+package util;
+
+public class FindMaxAndMinNumber {
+
+	public static void main(String[] args) {
+		int[] arr = new int[] { 10, 55, 70, 40, 20 };
+
+		int min = arr[0];
+		int max = arr[0];
+		
+		
+
+	}
+
+}

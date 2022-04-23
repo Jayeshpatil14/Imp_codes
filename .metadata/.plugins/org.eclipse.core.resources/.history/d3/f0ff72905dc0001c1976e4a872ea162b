@@ -1,0 +1,35 @@
+package search;
+
+public class BinarySearch {
+
+	private static int binarySearch(int[] arr, int key) {
+		int left = 0;
+		int right = arr.length - 1;
+
+		if (left <= right) {
+			int mid = (left + right) / 2;
+			System.out.println("left : " + left + " right : " + right + " mid : " + mid);
+			// check if num is at mid position
+			if (arr[mid] == key)
+				return mid;
+			// number is greater so search in right half
+			if (arr[mid] < key)
+				return binarySearch(arr, key);
+			else
+				return binarySearch(arr, key);
+		}
+		return -1;
+
+	}
+
+	public static void main(String[] args) {
+		int[] arr = new int[] { 11, 22, 33, 44, 55 };
+		int key = 44;
+		int pos = binarySearch(arr, key);
+		if(pos == -1)
+			System.out.println(key+" not found");
+		else
+			System.out.println(key+" found at "+pos+" position");
+	}
+
+}

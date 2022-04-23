@@ -1,0 +1,23 @@
+package util;
+
+import java.util.Scanner;
+
+public class StrongNumber {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter number : ");
+		int num = sc.nextInt();
+		
+		int fact = 1;
+		for (int i = 1; i <= num; i++) {
+			fact = fact * i;
+		}
+		
+		if(fact==num)
+			System.out.println(num+" is Strong number");
+		else
+			System.out.println(num+" is not a strong number");
+	}
+
+}

@@ -1,0 +1,22 @@
+package util;
+
+import java.util.Scanner;
+
+public class ArrayReverse {
+	static Scanner sc = new Scanner(System.in);
+	private static void accepRecord(int[] arr) {
+		for(int i=0;i<arr.length;i++) {
+			arr[i]=sc.nextInt();
+		}
+	}
+	
+	public static void main(String[] args) {
+		int [] arr = new int[5];
+		accepRecord(arr);
+		
+		
+		
+	}
+
+	
+}

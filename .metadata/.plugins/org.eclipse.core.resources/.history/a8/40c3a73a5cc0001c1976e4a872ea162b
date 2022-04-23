@@ -1,0 +1,19 @@
+package search;
+
+public class BinarySearch {
+
+	private static void binarySearch(int[] arr, int key) {
+		int left=0;
+		
+		
+	}
+	
+	public static void main(String[] args) {
+		int [] arr = new int [] {11,22,33,44,55};
+		int key = 44;
+		binarySearch(arr,key);
+	}
+
+	
+
+}

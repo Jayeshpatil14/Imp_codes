@@ -1,0 +1,28 @@
+package util;
+
+class Singleton {
+	private static Singleton instance;
+	private String str;
+	private Singleton() {
+		String str = "jayesh";
+	}
+	
+	public String getString() {
+		return str;
+	}
+	
+	public static Singleton getInstance() {
+		if(instance == null)
+			instance = new Singleton();
+		return instance;
+	}
+
+}
+
+public class SingletonProgram{
+	public static void main(String[] args) {
+		Singleton s = Singleton.getInstance();
+		System.out.println(s.getString());
+		//System.out.println(s.toString());
+	}
+}

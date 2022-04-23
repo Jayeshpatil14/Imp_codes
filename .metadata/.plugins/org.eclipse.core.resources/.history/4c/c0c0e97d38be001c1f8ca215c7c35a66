@@ -1,0 +1,19 @@
+package util;
+
+import java.util.Scanner;
+
+public class ArrayReverse {
+	Scanner sc = new Scanner(System.in);
+	private static void accepRecord(int[] arr) {
+		
+		
+	}
+	
+	public static void main(String[] args) {
+		int [] arr = new int[5];
+		accepRecord(arr);
+		
+	}
+
+	
+}

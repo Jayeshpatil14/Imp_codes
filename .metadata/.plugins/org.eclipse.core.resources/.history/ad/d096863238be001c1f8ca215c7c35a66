@@ -1,0 +1,17 @@
+package util;
+
+public class ArrayReverse {
+	
+	private static void accepRecord(int[] arr) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	public static void main(String[] args) {
+		int [] arr = new int[5];
+		accepRecord(arr);
+		
+	}
+
+	
+}

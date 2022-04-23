@@ -1,0 +1,13 @@
+package util;
+/*
+An armstrong number is a number such that sum of the power of its digits is
+equal to number itself.
+ */
+public class ArmstrongNumber {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
