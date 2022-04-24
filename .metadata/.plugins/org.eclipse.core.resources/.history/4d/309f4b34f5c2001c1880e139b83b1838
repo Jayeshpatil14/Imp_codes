@@ -1,0 +1,27 @@
+package util;
+
+import java.util.Arrays;
+
+public class SubArrayFromArray {
+	//print all sub arrays between arr[0.....n-1]
+	public static void subArr(int [] arr) {
+		//pick starting point
+		for(int i=0;i<arr.length;i++) {
+			//pick end point
+			for(int j=i;j<arr.length;j++) {
+				//print sub array between current starting and ending point
+				for(int k=i;k<=j;k++) {
+					System.out.print(arr[k]+" ");
+				}
+				System.out.println();
+			}
+		}
+		
+	}
+	public static void main(String[] args) {
+		int[] arr = new int[] { 10, 55, 70,70,70, 40, 20 };
+		subArr(arr);
+		
+	}
+
+}

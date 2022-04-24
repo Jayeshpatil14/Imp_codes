@@ -1,0 +1,21 @@
+package util;
+
+public class INITCapOfWordInString {
+
+	public static String capitaliseWord(String str) {
+		String[] words = str.split("\\s");
+		String capword = "";
+		for (String w : words) {
+			String first = w.substring(0, 1);
+			//String remfisrt = w.substring(1);
+			capword += first.toUpperCase() + /*remfisrt+*/" ";
+		}
+		return capword;
+	}
+
+	public static void main(String[] args) {
+		String str = "I am sonoo jaiswal";
+		System.out.println(capitaliseWord(str));
+	}
+
+}

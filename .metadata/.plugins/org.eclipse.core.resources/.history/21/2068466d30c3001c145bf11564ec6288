@@ -1,0 +1,30 @@
+package util;
+
+public class INITCapOfWordInString {
+
+	public static String capitaliseWord(String str) {
+		String[] words = str.split("\\s");
+		String capword = "";
+		boolean flag = true;
+		for (String w : words) {
+			if(w=="for") {
+				flag = false;
+				break;
+			
+			//String remfisrt = w.substring(1);
+			
+			}
+			if(flag) {
+				String first = w.substring(0, 1);
+				capword += first.toUpperCase() + /*remfisrt+*/"";
+			}
+		}
+		return capword;
+	}
+
+	public static void main(String[] args) {
+		String str = "I am sonoo for jaiswal";
+		System.out.println(capitaliseWord(str));
+	}
+
+}
