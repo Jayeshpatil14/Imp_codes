@@ -10,8 +10,8 @@ public class Tokeniser {
 		System.out.print("Enter Line :");
 		String s = sc.nextLine();
 		// Write your code here.
-		//String delim = " ,'? !";
-		String delim = " ";
+		String delim = " ,'? !";
+	
 		StringTokenizer stk = new StringTokenizer(s, delim);
 
 		int count = stk.countTokens();
