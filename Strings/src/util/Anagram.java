@@ -10,6 +10,7 @@ class Anagram {
 
 		a = a.toLowerCase();
 		b = b.toLowerCase();
+		
 		char[] arr1 = a.toCharArray();
 		char[] arr2 = b.toCharArray();
 
